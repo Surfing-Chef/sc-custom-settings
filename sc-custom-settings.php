@@ -6,7 +6,7 @@
  * Version: 1.0
  * Author: Surfing-Chef
  * Author URI: https://github.com/Surfing-Chef
- * License: GPL3
+ * License: MIT
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: sc-custom-settings
 */
