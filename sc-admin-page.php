@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SC Custom Settings
  * Plugin URI: https://github.com/Surfing-Chef/sc-custom-settings
- * Description: Adds a place for custom settings within the WordPress Admin Dashboard Settings
+ * Description: Creates a custom options page on the WordPress dashboard menu
  * Version: 1.1
  * Author: Surfing-Chef
  * Author URI: https://github.com/Surfing-Chef
