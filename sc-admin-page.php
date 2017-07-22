@@ -79,8 +79,20 @@ function sc_settings_section_cb( $args ){
 // Define field components
 // Called by add_settings_field()
 function sc_settings_field_cb( $args ){
+
+  // Get the value of the registered setting
+  // $option_name from register_setting()
+  $options = get_option( 'sc_settings_options' );
+  // output the field
   ?>
-  <p>This is where a form goes</p>
+  <input id="<?php echo esc_attr( $args['label_for'] ); ?>"
+         type="text"
+         data-custom="<?php echo esc_attr( $args['sc_settings_custom_data'] ); ?>"
+         name="sc_settings_options[<?php echo esc_attr( $args['label_for'] ); ?>]">
+
+  <p class="description">
+  <?php esc_html_e( 'Enter a valid Googgle Map AP.', 'sc' ); ?>
+  </p>
   <?php
 }
 
@@ -92,7 +104,7 @@ function sc_options_page(){
     __('SC Options', 'sc'),           // $page_title
     __('SC Options', 'sc'),           // $menu_title
     'manage_options',                 // $capability
-    'sc_menu_slug',                   // $menu_slug
+    'sc_custom_options',                  // $menu_slug
     'sc_options_page_html'            // $function
   );
 }
